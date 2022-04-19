@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"araba1\startup_stm32f103xb.o"
+"araba1\my_nrf24.o"
+"araba1\main.o"
+"araba1\stm32f1xx_it.o"
+"araba1\stm32f1xx_hal_msp.o"
+"araba1\stm32f1xx_hal_gpio_ex.o"
+"araba1\stm32f1xx_hal_adc.o"
+"araba1\stm32f1xx_hal_adc_ex.o"
+"araba1\stm32f1xx_hal_spi.o"
+"araba1\stm32f1xx_hal_spi_ex.o"
+"araba1\stm32f1xx_hal_tim.o"
+"araba1\stm32f1xx_hal_tim_ex.o"
+"araba1\stm32f1xx_hal_uart.o"
+"araba1\stm32f1xx_hal.o"
+"araba1\stm32f1xx_hal_rcc.o"
+"araba1\stm32f1xx_hal_rcc_ex.o"
+"araba1\stm32f1xx_hal_gpio.o"
+"araba1\stm32f1xx_hal_dma.o"
+"araba1\stm32f1xx_hal_cortex.o"
+"araba1\stm32f1xx_hal_pwr.o"
+"araba1\stm32f1xx_hal_flash.o"
+"araba1\stm32f1xx_hal_flash_ex.o"
+"araba1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "araba1\araba1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "araba1.map" -o araba1\araba1.axf
